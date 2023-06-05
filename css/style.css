@@ -454,7 +454,7 @@ h6 {
   gap: 40px;
 }
 
-.graphic__sliders {
+.graphic__sliders-wrap {
   padding: 20px 0;
   background: rgba(217, 217, 217, 0.5);
   margin-top: 79px;
@@ -1688,7 +1688,7 @@ h6 {
 
 .projects__title {
   margin-left: auto;
-  padding: 0 82px 64px 82px;
+  padding: 0 100px 64px 82px;
   font-weight: 900;
   font-size: 128px;
   line-height: 50px;
@@ -1699,10 +1699,16 @@ h6 {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  -webkit-transform: translate(0, 45px);
-      -ms-transform: translate(0, 45px);
-          transform: translate(0, 45px);
+  -webkit-transform: translate(100px, 45px);
+      -ms-transform: translate(100px, 45px);
+          transform: translate(100px, 45px);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   z-index: 10;
   /* white */
   color: #FFFFFF;
@@ -2383,6 +2389,7 @@ h6 {
   background-color: red;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 
 .popup {
@@ -2409,6 +2416,8 @@ h6 {
 
 .popup__bg-btn {
   background: rgba(0, 0, 0, 0.404);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: absolute;
   width: 100vw;
   height: 100%;
@@ -2440,6 +2449,8 @@ h6 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  -webkit-box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.733);
+          box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.733);
   padding: 65px 65px 90px 65px;
 }
 
@@ -3242,7 +3253,7 @@ h6 {
             align-items: flex-start;
   }
 
-  .graphic__sliders {
+  .graphic__sliders-wrap {
     margin-top: 43px;
     padding: 5px 0;
   }
@@ -3363,12 +3374,14 @@ h6 {
 
   .projects__title {
     padding-top: 0px;
+    padding: 0 0px 0px 0px;
     line-height: 85px;
     -webkit-transform: translate(0, 0px);
         -ms-transform: translate(0, 0px);
             transform: translate(0, 0px);
     max-width: calc(100% + 50px);
     width: 100vw;
+    text-align: center;
     margin-left: -25px;
     height: 63px;
     display: -webkit-box;
