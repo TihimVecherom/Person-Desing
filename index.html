@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Logo Design - Artem Vovchenko</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230603160641">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230605184524">
+	<link rel="shortcut icon" href="img/main/f-icon.png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,12 +15,35 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+
+			<div id="fix" class="fix"></div>
+
+			<div id="popup" class="popup">
+				<a class="popup__bg-btn" href="#fix"></a>
+				<div class="popup__wrap">
+					<div class="popup__content">
+						<div class="popup__title">Would <br> like <span>a free</span> consultation?
+						</div>
+						<img class="popup__bg" src="img/main/popup/bg.jpg" alt="bg">
+						<img class="popup__bg-mb" src="img/main/popup/gb-mb.jpg" alt="bg">
+						<img class="popup__decor" src="img/main/popup/decor.png" alt="bg">
+						<img class="popup__decor-mb" src="img/main/popup/decor-mb.png" alt="bg">
+						<form class="form" action="get">
+							<input type="text" name="name" placeholder="name">
+							<input type="text" name="email" placeholder="e-mail">
+							<a class="form__btn" href="#fix">send an application</a>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
 			<div class="header__container">
 				<div class="header__content">
 					<a class="header__logo" href="#">
 						<img src="img/header/logo.svg" alt="logo">
 					</a>
-					<a class="header__btn" href="#">contact</a>
+					<a class="header__btn" href="#popup">contact</a>
 				</div>
 			</div>
 		</header>
@@ -113,22 +136,22 @@
 								<h2 class="design__subtitle"><span>for your</span>business</h2>
 							</div>
 							<div class="design__buttons">
-								<a class="design__btn" href="#">get in touch</a>
+								<a class="design__btn" href="#popup">get in touch</a>
 							</div>
 							<div class="social">
-								<a class="social__link" href="#">
+								<a class="social__link" href="https://www.instagram.com/vovchenko_design/">
 									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M15.6787 0.200195H5.92131C2.65629 0.200195 0 2.85649 0 6.12155V15.8789C0 19.1439 2.65629 21.8002 5.92131 21.8002H15.6787C18.9437 21.8002 21.6 19.1439 21.6 15.8789V6.12155C21.6 2.85649 18.9437 0.200195 15.6787 0.200195ZM10.8 16.9247C7.53321 16.9247 4.87557 14.267 4.87557 11.0002C4.87557 7.73341 7.53325 5.0758 10.8 5.0758C14.0667 5.0758 16.7245 7.73345 16.7245 11.0002C16.7245 14.2669 14.0667 16.9247 10.8 16.9247ZM17.0788 6.5214C16.0863 6.5214 15.2788 5.71393 15.2788 4.72143C15.2788 3.72893 16.0863 2.92142 17.0788 2.92142C18.0713 2.92142 18.8788 3.72888 18.8788 4.72139C18.8788 5.71389 18.0713 6.5214 17.0788 6.5214Z" fill="white" />
 									</svg>
 								</a>
-								<a class="social__link" href="#">
+								<a class="social__link" href="https://www.linkedin.com/in/vovchenkoartem/">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M22.5998 22.5993V14.6882C22.5998 10.8001 21.7628 7.83008 17.2268 7.83008C15.0397 7.83008 13.5817 9.0181 12.9877 10.1521H12.9337V8.18108H8.64062V22.5993H13.1227V15.4442C13.1227 13.5542 13.4737 11.7451 15.7957 11.7451C18.0908 11.7451 18.1178 13.8782 18.1178 15.5522V22.5723H22.5998V22.5993Z" fill="white" />
 										<path d="M1.35156 8.18262H5.83363V22.6008H1.35156V8.18262Z" fill="white" />
 										<path d="M3.59204 1C2.16102 1 1 2.16102 1 3.59204C1 5.02306 2.16102 6.21108 3.59204 6.21108C5.02306 6.21108 6.18408 5.02306 6.18408 3.59204C6.18408 2.16102 5.02306 1 3.59204 1Z" fill="white" />
 									</svg>
 								</a>
-								<a class="social__link" href="#">
+								<a class="social__link" href="https://t.me/artemvovchenko">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M9.41718 16.1814L9.02018 21.7654C9.58818 21.7654 9.83418 21.5214 10.1292 21.2284L12.7922 18.6834L18.3102 22.7244C19.3222 23.2884 20.0352 22.9914 20.3082 21.7934L23.9302 4.8214L23.9312 4.8204C24.2522 3.32441 23.3902 2.73941 22.4042 3.10641L1.11418 11.2574C-0.338822 11.8214 -0.316822 12.6314 0.867178 12.9984L6.31018 14.6914L18.9532 6.7804C19.5482 6.3864 20.0892 6.6044 19.6442 6.9984L9.41718 16.1814Z" fill="white" />
 									</svg>
@@ -743,7 +766,7 @@
 
 						</div>
 						<div class="logos__buttons">
-							<a class="logos__btn" href="#">get in touch!</a>
+							<a class="logos__btn" href="#popup">get in touch!</a>
 						</div>
 					</div>
 				</div>
@@ -758,7 +781,18 @@
 						<h2 class="workflow__title">workflow</h2>
 						<div class="workflow__items">
 							<div class="workflow__item">
-								<div class="workflow__item-num">1</div>
+
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<g>
+										<polygon class="st0" points="89.5,85.9 115.3,85.9 93.6,194.4 132.8,194.4 160.6,55.6 95.6,55.6 	" />
+									</g>
+								</svg>
 								<div class="workflow__item-title"><span>brief</span> </div>
 								<div class="workflow__item-text">Before work starts, you’ll receive a link
 									to a small text document that contains
@@ -766,23 +800,75 @@
 									for a quality logo design.</div>
 							</div>
 							<div class="workflow__item">
-								<div class="workflow__item-num">2</div>
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<g>
+										<path class="st0" d="M162.6,59.3c-7.7-3.3-16.6-5-26.6-5c-12.7,0-24.1,2.5-34.3,7.6c-10.2,5.1-18,11.9-23.6,20.5l26.2,17.2
+										c3.6-4.4,7.6-7.8,12-10.2c4.4-2.4,9-3.7,13.8-3.7c5.4,0,9.6,1.2,12.5,3.6s4.4,5.5,4.4,9.3c0,2.5-0.6,5-1.7,7.5s-3,5.2-5.6,7.9
+										c-2.6,2.8-6.3,6.1-11.1,9.9L68,171.1l-5,24.6h108l6.3-31.1h-51.8l29.2-22.6c8.3-6.3,14.8-12.2,19.5-17.5s8-10.6,10-15.8
+										c2-5.2,3-10.5,3-16c0-7.5-2.1-14.2-6.4-19.9C176.3,67.1,170.3,62.6,162.6,59.3z" />
+									</g>
+								</svg>
 								<div class="workflow__item-title"><span>analysis</span> </div>
 								<div class="workflow__item-text">We conduct consumer research
 									and competitors, market analysis, mark the main advantages and key points of the brand. Comparing the overall style with your requirements and wishes written in brief.</div>
 							</div>
 							<div class="workflow__item">
-								<div class="workflow__item-num">3</div>
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<g>
+										<path class="st0" d="M84.1,84.6h54.2l-29.6,26.7l-5,24.8h16.8c6.3,0,11,1,14,3s4.5,4.9,4.5,8.7c0,3.4-1,6.4-2.9,8.8
+								  c-1.9,2.4-4.7,4.3-8.4,5.5c-3.7,1.3-8.3,1.9-13.7,1.9c-6.5,0-12.9-1-19.3-3s-12.1-4.8-17.1-8.5l-18.2,27.9
+								  c6.7,5,14.6,8.8,23.6,11.4c9,2.6,18.5,3.9,28.5,3.9c12.9,0,24.5-2.2,34.7-6.5c10.2-4.4,18.1-10.3,23.9-17.9
+								  c5.7-7.6,8.6-16.2,8.6-25.9c0-7.5-1.9-14.1-5.6-19.6c-3.8-5.5-9.1-9.8-16-12.8c-2.1-0.9-4.3-1.6-6.6-2.2l35.4-31.9l4.8-24.6H90.3
+								  L84.1,84.6z" />
+									</g>
+								</svg>
 								<div class="workflow__item-title"><span>design</span></div>
 								<div class="workflow__item-text">Logo creation based on the received data from steps #1 and #2. Basically our customers choose 3 logo options because it helps more in choosing.</div>
 							</div>
 							<div class="workflow__item">
-								<div class="workflow__item-num">4</div>
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<g>
+										<polygon class="st0" points="178,113.1 141.8,113.1 137,136.8 109.4,136.8 181,55.6 138.8,55.6 60.7,142.2 55.8,167.9 129.1,167.9 
+										123.7,194.4 161.8,194.4 167.1,167.9 187.7,167.9 194.1,136.8 173.3,136.8 	" />
+									</g>
+								</svg>
+
 								<div class="workflow__item-title"><span>presentation</span></div>
 								<div class="workflow__item-text">We create a small presentation with created logos: explaining the main idea of the logo, type of realization, show logos on different backgrounds, mock-ups etc.</div>
 							</div>
 							<div class="workflow__item">
-								<div class="workflow__item-num">5</div>
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<g>
+										<path class="st0" d="M78,135.2h39.8c8.2,0,13.9,1.1,17.2,3.4c3.3,2.2,5,5.3,5,9.3c0,5-2.1,8.9-6.4,11.8c-4.3,2.8-10.5,4.3-18.5,4.3
+								  c-6.6,0-13.1-1-19.5-3s-12.1-4.8-16.9-8.5l-18.2,27.9c6.6,5,14.4,8.8,23.5,11.4c9,2.6,18.6,3.9,28.6,3.9c12.9,0,24.5-2.1,34.6-6.3
+								  s18.1-10.3,23.9-18.1c5.8-7.9,8.7-17.1,8.7-27.8c0-12.4-4.4-22-13.2-28.6c-8.8-6.7-21.7-10-38.7-10h-6l5.8-20.2h55.7l6.1-30.3
+								  h-88.2L78,135.2z" />
+									</g>
+								</svg>
 								<div class="workflow__item-title"><span>edits</span></div>
 								<div class="workflow__item-text">If you think the logo needs some edits
 									to be perfect -
@@ -791,7 +877,21 @@
 									Basically you’ll have 3 free edit stages.</div>
 							</div>
 							<div class="workflow__item">
-								<div class="workflow__item-num">6</div>
+								<svg class="workflow__item-num" version="1.1" id="баннер-красный_xA0_Изображение_00000090259856699711198600000013338158419897363854_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: none;
+											stroke: #000000;
+										}
+									</style>
+									<path class="st0" d="M154.6,110.6c-6.7-3.1-13.8-4.7-21.5-4.7c-6.2,0-11.9,0.9-16.9,2.7c-4.2,1.5-8,3.6-11.5,6.4
+									c0.4-1.3,0.7-2.5,1.2-3.7c1.4-4,3.2-7.6,5.5-11s5.1-6.3,8.3-8.7c3.2-2.4,7-4.3,11.2-5.6c4.2-1.3,9-2,14.3-2c4.8,0,9.3,0.5,13.6,1.5
+									c4.3,1,8.3,2.7,12,5.2L188.6,63c-4.6-3.2-10.6-5.6-18-7.4s-15.1-2.7-23.2-2.7c-12.2,0-22.9,1.8-32.3,5.2
+									c-9.4,3.5-17.5,8.2-24.3,14.2C84,78.2,78.4,85,74,92.5c-4.4,7.5-7.7,15.5-9.7,23.8s-3.1,16.4-3.1,24.4c0,12.4,2.4,22.8,7.3,31.2
+									c4.9,8.4,11.7,14.7,20.4,18.9s18.7,6.3,29.9,6.3s21.2-2.1,30-6.3c8.8-4.2,15.7-10.1,20.7-17.7c5-7.6,7.5-16.6,7.5-27
+									c0-8.6-2.1-15.8-6.2-21.8C166.7,118.2,161.3,113.7,154.6,110.6z M121.5,170.1c-14.5,1.6-21.4-8.7-20.9-17.7
+									c0.7-11.6,9.3-17.7,20.9-17.7c11.5,0,17.7,6.4,17.7,16.2C139.2,160.6,133.2,168.8,121.5,170.1z" />
+								</svg>
 								<div class="workflow__item-title"><span>final</span></div>
 								<div class="workflow__item-text">All source files of the project will send
 									to you in high quality. Original raster
@@ -998,6 +1098,10 @@
 									</div>
 								</div>
 								<div class="additional__item-gif">
+									<div class="additional__item-gif-text">
+										<p>before</p>
+										<p>after</p>
+									</div>
 									<img src="img/main/additional/4.gif" alt="gif">
 								</div>
 							</div>
@@ -1032,7 +1136,7 @@
 						</div>
 					</div>
 					<div class="additional__buttons">
-						<a class="additional__btn" href="#">get in touch!</a>
+						<a class="additional__btn" href="#popup">get in touch!</a>
 					</div>
 				</div>
 			</div>
@@ -1073,12 +1177,29 @@
 		</main>
 		<footer class="footer">
 			<img class="footer__bg" src="img/footer/bg.jpg" alt="bg">
-
+			<img class="footer__decor-pc" src="img/footer/decor.png" alt="bg">
 			<div class="footer__container">
 				<img class="footer__decor" src="img/footer/decor-mb.png" alt="decor">
 				<div class="footer__section">
 					<div class="footer__block-title">
-						<h2 class="footer__title">Have </h2>
+						<div class="footer__title"><svg version="1.1" id="fdf" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 252.9" style="enable-background:new 0 0 1200 252.9;" xml:space="preserve">
+								<style type="text/css">
+									.st0 {
+										fill: none;
+										stroke: #ffffff;
+									}
+								</style>
+								<g>
+									<polygon class="st0" points="398.5,106 354.9,106 354.9,56.4 307.7,56.4 307.7,196.5 354.9,196.5 354.9,144.8 398.5,144.8 
+					  398.5,196.5 445.7,196.5 445.7,56.4 398.5,56.4 	" />
+									<path class="st0" d="M514.5,56.4l-61.2,140h48l9.4-24.4h53.2l9.4,24.4h48.8l-61.2-140H514.5z M523.7,138l13.6-35.3l13.6,35.3H523.7
+					  z" />
+									<polygon class="st0" points="690.6,138.2 657.3,56.4 606.5,56.4 665.7,196.5 712.1,196.5 771.3,56.4 724.9,56.4 	" />
+									<polygon class="st0" points="822.3,160.8 822.3,142.5 881.5,142.5 881.5,108.4 822.3,108.4 822.3,92 889.7,92 889.7,56.4 
+					  775.9,56.4 775.9,196.5 892.3,196.5 892.3,160.8 	" />
+								</g>
+							</svg>
+						</div>
 						<h3 class="footer__subtitle">any</h3>
 						<p class="footer__subtitle-text"><span>questions?</span> </p>
 					</div>
@@ -1087,14 +1208,14 @@
 							contact <span>for free </span><br>
 							consultation!
 						</div>
-						<a class="footer__btn" href="#">get in touch!</a>
+						<a class="footer__btn" href="#popup">get in touch!</a>
 					</div>
 				</div>
 
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230603160641"></script>
+	<script src="js/app.min.js?_v=20230605184524"></script>
 </body>
 
 </html>
