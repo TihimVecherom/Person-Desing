@@ -3435,7 +3435,17 @@
                     delay: 0
                 },
                 simulateTouch: false,
-                loop: true
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 0,
+                        autoHeight: true
+                    },
+                    479: {
+                        slidesPerView: "auto"
+                    }
+                }
             });
             new core(".swiper-brand-reverse", {
                 modules: [ Navigation, Autoplay, Lazy ],
@@ -3448,7 +3458,17 @@
                     reverseDirection: true
                 },
                 simulateTouch: false,
-                loop: true
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 0,
+                        autoHeight: true
+                    },
+                    479: {
+                        slidesPerView: "auto"
+                    }
+                }
             });
             new core(".swiper-projects-one", {
                 modules: [ Navigation, Autoplay, Lazy ],
