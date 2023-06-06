@@ -2242,6 +2242,7 @@ h6 {
 
 .reviews__btn {
   position: absolute;
+  z-index: 10;
   bottom: 70px;
   right: 25px;
   background: #c71717;
@@ -2633,16 +2634,54 @@ h6 {
   max-width: max-content;
 }
 
-@supports (min-width: clamp( 9.75rem , 4.9583333333rem  +  21.2962962963vw , 24.125rem )) {
-  .footer__title svg g {
-    min-width: clamp( 9.75rem , 4.9583333333rem  +  21.2962962963vw , 24.125rem );
+.footer__title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px;
+}
+
+@supports (margin-bottom: clamp( 1.5625rem , 2.8125rem  +  -1.3888888889vw , 2.5rem )) {
+  .footer__title {
+    margin-bottom: clamp( 1.5625rem , 2.8125rem  +  -1.3888888889vw , 2.5rem );
   }
 }
 
-@supports not (min-width: clamp( 9.75rem , 4.9583333333rem  +  21.2962962963vw , 24.125rem )) {
-  .footer__title svg g {
-    min-width: calc(9.75rem + 14.375 * (100vw - 22.5rem) / 67.5);
+@supports not (margin-bottom: clamp( 1.5625rem , 2.8125rem  +  -1.3888888889vw , 2.5rem )) {
+  .footer__title {
+    margin-bottom: calc(2.5rem + -0.9375 * (100vw - 22.5rem) / 67.5);
   }
+}
+
+@supports (width: clamp( 16.875rem , 14.75rem  +  9.4444444444vw , 23.25rem )) {
+  .footer__title {
+    width: clamp( 16.875rem , 14.75rem  +  9.4444444444vw , 23.25rem );
+  }
+}
+
+@supports not (width: clamp( 16.875rem , 14.75rem  +  9.4444444444vw , 23.25rem )) {
+  .footer__title {
+    width: calc(16.875rem + 6.375 * (100vw - 22.5rem) / 67.5);
+  }
+}
+
+@supports (height: clamp( 3.75rem , 2.9791666667rem  +  3.4259259259vw , 6.0625rem )) {
+  .footer__title {
+    height: clamp( 3.75rem , 2.9791666667rem  +  3.4259259259vw , 6.0625rem );
+  }
+}
+
+@supports not (height: clamp( 3.75rem , 2.9791666667rem  +  3.4259259259vw , 6.0625rem )) {
+  .footer__title {
+    height: calc(3.75rem + 2.3125 * (100vw - 22.5rem) / 67.5);
+  }
+}
+
+.footer__title svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__subtitle {
@@ -2652,6 +2691,8 @@ h6 {
   text-transform: uppercase;
   color: #C71717;
   margin-top: -55px;
+  position: relative;
+  z-index: 3;
 }
 
 @supports (font-size: clamp( 4rem , 3.3333333333rem  +  2.962962963vw , 6rem )) {
